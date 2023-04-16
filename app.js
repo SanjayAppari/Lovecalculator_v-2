@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-mongoose.connect('mongodb://localhost:27017/love_cal_V-2', {
+mongoose.connect('mongodb+srv://sanjay:sanjay@cluster0.aqybfjz.mongodb.net/love_cal_V-2', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4,
