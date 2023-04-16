@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-image: url('/images/bg.jpg');
+    background-position:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.title{
+    /* border: 1px solid black; */
+    padding-top: 2vh    ;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.title img{
+    position: relative;
+    height:100px;
+    width: 300px;
+}
+.main{
+    height: 91vh;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.main .left{
+    /* border: 1px solid white; */
+    position: relative;
+    width:40%;
+    height: 90%;
+}
+.main .left img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main .right{
+    /* border: 1px solid white; */
+    position: relative;
+    width:40%;
+    height: 90%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    padding: 20px;
+    flex-direction: column;
+}
+
+.main .right img{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid white; */
+}
+
+.main .right form{
+    position: relative;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .right form input{
+    position: relative;
+    width: 80%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 2%;
+}
+.main .right .answer{
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid white; */
+    height: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive;
+    justify-content: center;
+    
+}
+.main .right .answer h4{
+    font-size: 30px;
+}
+
+@media (max-width:500px){
+    .main .left{
+        /* border: 1px solid white; */
+        position: relative;
+        width: 90%;
+        height: 40%;
+    }
+    .main .right{
+        margin-top: -100px;
+        width: 100%;
+        height: 60%;
+    }
+    .main .right img{
+        position: relative;
+        height: 30%;   
+    }
+    .main .right .answer{
+        height: 40%;
+    }
+}
